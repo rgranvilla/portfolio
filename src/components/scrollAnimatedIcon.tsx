@@ -15,9 +15,9 @@ export function ScrollAnimatedIcon({
     >
       <div className="group flex h-12 w-8 justify-center rounded-2xl border-2 border-slate-600 py-3 hover:border-slate-400">
         <div className="relative flex h-full w-full flex-col items-center justify-center space-y-1">
-          <div className="group-hover:animate-scrollDown h-2 w-1 rounded-full bg-slate-500 group-hover:bg-slate-400" />
-          <div className="group-hover:animate-scrollDown h-2 w-1 rounded-full bg-slate-500 group-hover:bg-slate-400" />
-          <div className="group-hover:animate-scrollDown h-2 w-1 rounded-full bg-slate-500 group-hover:bg-slate-400" />
+          <div className="h-2 w-1 rounded-full bg-slate-500 group-hover:animate-scrollDown group-hover:bg-slate-400" />
+          <div className="h-2 w-1 rounded-full bg-slate-500 group-hover:animate-scrollDown group-hover:bg-slate-400" />
+          <div className="h-2 w-1 rounded-full bg-slate-500 group-hover:animate-scrollDown group-hover:bg-slate-400" />
         </div>
       </div>
     </div>

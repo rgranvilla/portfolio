@@ -19,7 +19,7 @@ export function WhatsappCTA() {
         Vamos conversar sobre como posso ajudar no seu próximo projeto!
       </h1>
 
-      <div className="text-whatsapp mt-16 flex items-center gap-4">
+      <div className="mt-16 flex items-center gap-4 text-whatsapp">
         <FaWhatsapp className="size-8" />
         <Button variant="whatsapp" size="lg" onClick={handleClick}>
           Chamar no WhatsApp
