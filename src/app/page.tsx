@@ -18,6 +18,12 @@ export default function Home() {
           'md:mt-48 md:px-0',
         )}
       >
+        <h1 className="sr-only">DevTrails - Portfólio Ricardo Granvilla</h1>
+        <p className="sr-only">
+          Interessado em criar soluções digitais escaláveis e de alta
+          performance? Vamos conversar sobre como posso ajudar no seu próximo
+          projeto!
+        </p>
         <Hero />
         <About />
         <Stats />

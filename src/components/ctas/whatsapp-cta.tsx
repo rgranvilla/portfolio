@@ -18,7 +18,7 @@ export function WhatsappCTA() {
     <div
       className={cn('my-12 flex flex-col items-center', 'md:mb-24 md:mt-32')}
     >
-      <h1
+      <h2
         className={cn(
           'max-w-6xl text-balance text-center font-serif text-2xl italic text-slate-300',
           'md:text-4xl md:font-medium',
@@ -26,7 +26,7 @@ export function WhatsappCTA() {
       >
         Interessado em criar soluções digitais escaláveis e de alta performance?
         Vamos conversar sobre como posso ajudar no seu próximo projeto!
-      </h1>
+      </h2>
 
       <div
         className={cn('mt-8 flex items-center gap-4 text-whatsapp', 'md:mt-16')}

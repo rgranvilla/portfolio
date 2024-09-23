@@ -26,10 +26,10 @@ export function Hero() {
             <Image src={SmallCircle} alt="" />
           </div>
         </div>
-        <h1 className="mt-12 bg-gradient-to-bl from-purple-700/90 to-cyan-500 bg-clip-text text-center text-2xl font-semibold text-transparent md:mt-32 md:text-start md:text-6xl">
+        <h2 className="mt-12 bg-gradient-to-bl from-purple-700/90 to-cyan-500 bg-clip-text text-center text-2xl font-semibold text-transparent md:mt-32 md:text-start md:text-6xl">
           <p className="">Bem vindo a devtrails,</p>
           <p className="">eu sou o Ricardo,</p>
-        </h1>
+        </h2>
         <h2 className="mt-2 text-center text-2xl font-medium md:mt-6 md:text-start md:text-6xl">
           desenvolvedor fullstack
         </h2>

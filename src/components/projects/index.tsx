@@ -101,14 +101,14 @@ const Projects = () => {
               />
 
               {/* Title */}
-              <h1
+              <h2
                 className={cn(
                   'border-b border-slate-600 py-8 text-center text-lg',
                   'md:text-2xl md:font-semibold',
                 )}
               >
                 {project.title}
-              </h1>
+              </h2>
 
               {/* Content */}
               <div className={cn('p-4', 'md:p-6')}>

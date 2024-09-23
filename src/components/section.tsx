@@ -18,12 +18,12 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   ...props
 }) => {
   return (
-    <h1
+    <h2
       className={cn('mb-4 text-lg font-semibold md:text-2xl', className)}
       {...props}
     >
       {children}
-    </h1>
+    </h2>
   )
 }
 

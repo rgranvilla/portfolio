@@ -12,13 +12,13 @@ export function BannerCTA() {
     >
       <div className="grid h-full grid-cols-1 place-content-center items-center gap-8 md:grid-cols-5">
         <div className="flex flex-col md:col-span-3 md:pl-20">
-          <h1
+          <h2
             className={cn(
               'py-4 text-center text-base font-semibold md:text-start md:text-2xl',
             )}
           >
             Vamos criar algo incrível juntos?
-          </h1>
+          </h2>
           <p className="text-balance px-6 text-center font-serif text-base italic text-slate-300 md:text-wrap md:px-0 md:text-start md:text-2xl">
             Se você procura um desenvolvedor que combina experiência técnica com
             uma abordagem inovadora e criativa, estou pronto para contribuir
