@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     },
   ],
   creator: 'Ricardo Granvilla Oliveira',
-  publisher: 'Ricardo Granvilla Oliveira',
   openGraph: {
     title: 'Devtrails Protfolio',
     description:

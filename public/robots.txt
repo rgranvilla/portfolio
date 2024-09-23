@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://portfolio.devtrails.com.br/
-
-# Sitemaps
-Sitemap: https://portfolio.devtrails.com.br/sitemap.xml
