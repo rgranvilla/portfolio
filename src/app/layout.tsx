@@ -5,8 +5,31 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 
 export const metadata: Metadata = {
-  title: 'RGO Protfolio',
+  title: 'Devtrails Protfolio',
   description: 'A portfolio site',
+  generator: 'Next.js',
+  applicationName: 'DevTrails Protfolio - Ricardo Granvilla',
+  category: 'development',
+  keywords: [
+    'portfolio',
+    'developer',
+    'web',
+    'mobile',
+    'apps',
+    'fullstack',
+    'react',
+    'nextjs',
+    'tailwindcss',
+    'typescript',
+  ],
+  authors: [
+    {
+      name: 'Ricardo Granvilla Oliveira',
+      url: 'https://portfolio.devtrails.com.br/',
+    },
+  ],
+  creator: 'Ricardo Granvilla Oliveira',
+  publisher: 'Ricardo Granvilla Oliveira',
 }
 
 const poppins = Poppins({
