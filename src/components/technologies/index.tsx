@@ -5,6 +5,10 @@ import {
   RiTailwindCssFill,
 } from 'react-icons/ri'
 
+import { cn } from '@/lib/utils'
+
+import { List, ListItem } from '../list'
+import { Section, SectionContent, SectionTitle } from '../section'
 import TechnologyCard from '../technology-card'
 
 const technologies = [
@@ -17,83 +21,102 @@ const technologies = [
   { id: 6, title: 'NodeJS', icon: FaNodeJs },
 ]
 
+const sections = [
+  {
+    title: 'Desenvolvimento Frontend',
+    items: [
+      'JavaScript, TypeScript',
+      'HTML 5, CSS 3, Sass, Bootstrap',
+      'ReactJS (Hooks, Context API)',
+      'React Native (Expo, RN Encrypted Storage)',
+      'NextJS (SSG, SSR, ISR, App Route)',
+      'Redux, Recoil, Zustand',
+      'CSS-in-JS, Tailwind CSS, Styled Component, Stitches',
+      'Material UI, Radix UI, Chakra UI, Ant Design',
+    ],
+  },
+  {
+    title: 'Desenvolvimento Backend',
+    items: [
+      'Node.js (Prisma, TypeORM, Knex)',
+      'NestJS (TypeORM, Injeção de Dependência)',
+      'Express (middlewares, pipelines, streams)',
+      'Fastify (middlewares, auto-documentação, plugins)',
+      'Cors, Zod, Joi, Yup (validações)',
+      'Material UI, Radix UI, Chakra UI, Ant Design',
+    ],
+  },
+  {
+    title: 'Boas Práticas & Arquitetura de Software',
+    items: [
+      'Clean Code, SOLID, Clean Architecture',
+      'Design Patterns (Factory, Use Cases, Singletons, Observers)',
+      'Injeção de Dependência, Streams Patterns, Middlewares/Pipelines',
+      'Decorators Patterns (logs e métricas)',
+      'Metodologias Ágeis',
+    ],
+  },
+  {
+    title: 'Soft Skills & Competências',
+    items: [
+      'Comunicação, Trabalho em Equipe, Solução de Problemas',
+      'Flexibilidade, Adaptabilidade, Atitude Positiva',
+      'Gerenciamento de Projetos, Documentação de Código',
+      'Atualização constante em tecnologias',
+    ],
+  },
+]
+
 export function Technologies() {
   return (
     <div className="border-t">
-      <div className="mt-16 flex justify-center">
-        <h3 className="text-3xl font-semibold text-purple-400">
+      <div className={cn('mt-8 flex justify-center', 'md:mt-24')}>
+        <h3
+          className={cn(
+            'text-xl font-semibold text-purple-400',
+            'md:text-center md:text-3xl md:font-semibold',
+          )}
+        >
           Tecnologias e Conhecimentos
         </h3>
       </div>
 
-      <div className="mt-16 grid w-full grid-cols-7 place-content-center gap-8">
-        {technologies.map((tech) => (
-          <TechnologyCard
-            key={tech.id}
-            IconComponent={tech.icon}
-            title={tech.title}
-          />
-        ))}
+      <div className="mt-12 md:mt-24">
+        <div
+          className={cn(
+            'flex flex-shrink-0 gap-8 overflow-x-auto',
+            'md:grid md:grid-cols-7',
+          )}
+        >
+          {technologies.map((tech) => (
+            <TechnologyCard
+              className="min-w-[184px]"
+              key={tech.id}
+              IconComponent={tech.icon}
+              title={tech.title}
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="mt-12 w-full">
-        <div className="grid grid-cols-2 place-content-center gap-16">
-          <div className="w-full">
-            <h1 className="text-2xl font-semibold">Desenvolvimento Frontend</h1>
-            <ul className="mt-2 list-inside list-disc px-4 text-slate-400">
-              <li>JavaScript, TypeScript</li>
-              <li>HTML 5, CSS 3, Sass, Bootstrap</li>
-              <li>ReactJS (Hooks, Context API)</li>
-              <li>React Native (Expo, RN Encrypted Storage)</li>
-              <li>NextJS (SSG, SSR, ISR, App Route)</li>
-              <li>Redux, Recoil, Zustand</li>
-              <li>CSS-in-JS, Tailwind CSS, Styled Component, Stitches</li>
-              <li>Material UI, Radix UI, Chakra UI, Ant Design</li>
-            </ul>
-          </div>
-
-          <div className="w-full">
-            <h1 className="text-2xl font-semibold">Desenvolvimento Backend</h1>
-            <ul className="mt-2 list-inside list-disc px-4 text-slate-400">
-              <li>Node.js (Prisma, TypeORM, Knex)</li>
-              <li>NestJS (TypeORM, Injeção de Dependência)</li>
-              <li>Express (middlewares, pipelines, streams)</li>
-              <li>Fastify (middlewares, auto-documentação, plugins)</li>
-              <li>Cors, Zod, Joi, Yup (validações)</li>
-              <li>Material UI, Radix UI, Chakra UI, Ant Design</li>
-            </ul>
-          </div>
-
-          <div className="w-full">
-            <h1 className="text-2xl font-semibold">
-              Boas Práticas & Arquitetura de Software
-            </h1>
-            <ul className="mt-2 list-inside list-disc px-4 text-slate-400">
-              <li>Clean Code, SOLID, Clean Architecture</li>
-              <li>
-                Design Patterns (Factory, Use Cases, Singletons, Observers)
-              </li>
-              <li>
-                Injeção de Dependência, Middlewares/Pipelines, Streams Patterns
-              </li>
-              <li>Decorators Patterns (logs e métricas)</li>
-              <li>Metodologias Ágeis</li>
-            </ul>
-          </div>
-
-          <div className="w-full">
-            <h1 className="text-2xl font-semibold">
-              Soft Skills & Competencias
-            </h1>
-            <ul className="mt-2 list-inside list-disc px-4 text-slate-400">
-              <li>Comunicação, Trabalho em Equipe, Solução de Problemas</li>
-              <li>Flexibilidade, Adaptabilidade, Atitude Positiva</li>
-              <li>Gerenciamento de Projetos, Documentação de Código</li>
-              <li>Atualização constante em tecnologias</li>
-            </ul>
-          </div>
-          <div></div>
-        </div>
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2">
+        {sections.map((section) => (
+          <Section>
+            <SectionTitle>{section.title}</SectionTitle>
+            <SectionContent className="">
+              <List className="space-y-4 md:space-y-2">
+                {section.items.map((item, index) => (
+                  <ListItem
+                    className="hyphens-auto text-xs md:text-lg"
+                    key={index}
+                  >
+                    {item}
+                  </ListItem>
+                ))}
+              </List>
+            </SectionContent>
+          </Section>
+        ))}
       </div>
     </div>
   )

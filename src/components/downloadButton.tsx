@@ -1,9 +1,11 @@
 'use client'
+import type { ComponentProps } from 'react'
+
 import { Button } from './ui/button'
 
 // Faz o componente ser um Client Component
 
-interface DownloadButtonProps {
+interface DownloadButtonProps extends ComponentProps<'button'> {
   path: string
   title: string
   suggestedFileName?: string
@@ -13,6 +15,7 @@ export default function DownloadButton({
   path,
   title,
   suggestedFileName,
+  ...props
 }: DownloadButtonProps) {
   const handleDownload = () => {
     const link = document.createElement('a')
@@ -24,9 +27,9 @@ export default function DownloadButton({
   return (
     <Button
       variant="gradient"
-      size="lg"
-      className="text-md border-purple-500"
+      className="text-md text-secondary-foreground transition-colors duration-300 ease-in-out hover:brightness-150"
       onClick={handleDownload}
+      {...props}
     >
       {title}
     </Button>

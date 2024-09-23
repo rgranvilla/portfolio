@@ -24,10 +24,10 @@ export function WhatsappCall({ className, ...props }: WhatsappCallProps) {
       <Button
         variant="secondary"
         size="lg"
-        className="rounded-full"
+        className="rounded-full text-lg"
         onClick={handleClick}
       >
-        Entrar em contato e vamos conversar!
+        Converse Agora!
       </Button>
     </div>
   )

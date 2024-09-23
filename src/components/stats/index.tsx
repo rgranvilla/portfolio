@@ -1,22 +1,20 @@
+import { cn } from '@/lib/utils'
+
+import { StatCard } from '../stat-card'
+
 export function Stats() {
   return (
-    <div className="mb-10 mt-24 flex items-center justify-around border-y border-slate-600 py-8 hover:border-slate-400">
-      <div className="flex flex-col items-center gap-4">
-        <h3 className="text-6xl text-purple-500">4+</h3>
-        <p className="text-2xl text-slate-400">Anos de experiência</p>
-      </div>
-
-      <div className="flex flex-col items-center gap-4">
-        <h3 className="text-6xl text-purple-500">13+</h3>
-        <p className="text-2xl text-slate-400">Projetos concluídos</p>
-      </div>
-
-      <div className="flex flex-col items-center gap-4">
-        <h3 className="text-6xl text-purple-500">5000+</h3>
-        <p className="text-2xl text-slate-400">Horas de desenvolvimento</p>
-      </div>
+    <div
+      className={cn(
+        'mt-12 grid grid-cols-1 place-content-center gap-4 border-y border-slate-600 py-4 hover:border-slate-400',
+        'md:mt-24 md:grid-cols-3 md:gap-16 md:py-8',
+      )}
+    >
+      <StatCard value="4+" label="Anos de experiência" />
+      <div className="h-px bg-slate-700 md:hidden" />
+      <StatCard value="48+" label="Projetos concluídos" />
+      <div className="h-px bg-slate-700 md:hidden" />
+      <StatCard value="5324+" label="Horas de desenvolvimento" />
     </div>
   )
 }
-
-// todo: divide this component into smaller components: StatsItem, StatsList, Stats
