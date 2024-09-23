@@ -30,6 +30,23 @@ export const metadata: Metadata = {
   ],
   creator: 'Ricardo Granvilla Oliveira',
   publisher: 'Ricardo Granvilla Oliveira',
+  openGraph: {
+    title: 'Devtrails Protfolio',
+    description:
+      'Pronto para levar seu projeto ao próximo nível? Juntos, podemos criar algo extraordinário que atenda às suas necessidades.',
+    url: 'https://portfolio.devtrails.com.br/',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'DevTrails Protfolio',
+    images: [
+      {
+        url: 'https://portfolio.devtrails.com.br/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'DevTrails Protfolio',
+      },
+    ],
+  },
 }
 
 const poppins = Poppins({
