@@ -35,7 +35,7 @@ export function Header() {
             <Link
               href="https://www.linkedin.com/in/rgranvilla/"
               target="_blank"
-              title="o link abre o linkedin de Ricardo Granvilla Oliveira em uma nova janela"
+              title="acessar o linkedin de Ricardo Granvilla Oliveira"
             >
               <FaLinkedinIn className="size-7" />
             </Link>
@@ -44,7 +44,7 @@ export function Header() {
             <Link
               href="https://github.com/rgranvilla"
               target="_blank"
-              title="link abre o github de Ricardo Granvilla Oliveira em uma nova janela"
+              title="acessar o github de Ricardo Granvilla Oliveira"
             >
               <FaGithub className="size-7" />
             </Link>
