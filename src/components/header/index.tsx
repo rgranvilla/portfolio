@@ -18,7 +18,10 @@ export function Header() {
         )}
       >
         <div>
-          <Image src={Logo} alt="" />
+          <Image
+            src={Logo}
+            alt="Imagem da logo com o nome devtrails entre os sinais de menor e barra maior, representado as tags do código"
+          />
         </div>
 
         <div className="flex w-fit justify-between gap-4">
@@ -32,12 +35,17 @@ export function Header() {
             <Link
               href="https://www.linkedin.com/in/rgranvilla/"
               target="_blank"
+              title="o link abre o linkedin de Ricardo Granvilla Oliveira em uma nova janela"
             >
               <FaLinkedinIn className="size-7" />
             </Link>
           </Button>
           <Button variant="secondary" size="icon" asChild>
-            <Link href="https://github.com/rgranvilla" target="_blank">
+            <Link
+              href="https://github.com/rgranvilla"
+              target="_blank"
+              title="link abre o github de Ricardo Granvilla Oliveira em uma nova janela"
+            >
               <FaGithub className="size-7" />
             </Link>
           </Button>
