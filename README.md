@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevTrails Portfólio
 
-## Getting Started
+Bem-vindo ao repositório do **DevTrails**, um portfólio desenvolvido para demonstrar habilidades e experiências no desenvolvimento web e mobile, com foco em soluções modernas e escaláveis.
 
-First, run the development server:
+## Aviso Importante
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Este projeto foi criado com o intuito de exibir conhecimentos técnicos e experiências práticas. Algumas funcionalidades podem ser simuladas e **não estão prontas para uso em produção**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌟 Funcionalidades Implementadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Hero e Apresentação
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Destaque inicial com animações e link para WhatsApp.
+- Acesso direto ao currículo do desenvolvedor.
 
-## Learn More
+### Tecnologias e Conhecimentos
 
-To learn more about Next.js, take a look at the following resources:
+- Exibição de stacks tecnológicas e descrições detalhadas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Projetos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Listagem de projetos marcantes desenvolvidos ao longo da carreira.
+- Detalhamento de cada projeto com imagens e descrições completas.
 
-## Deploy on Vercel
+### Sobre
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Informações sobre experiência, princípios e diferençiais como desenvolvedor.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### CTA para Contato
+
+- Botões de chamada para ação com foco em conversões.
+
+## 🚀 Tecnologias Utilizadas
+
+### Frontend
+
+- **Next.js 14**: Estrutura moderna para aplicações web.
+- **Tailwind CSS**: Estilização rápida e eficiente.
+- **React Icons**: Para uma interface intuitiva e visualmente atraente.
+
+### Configuração
+
+- **TypeScript**: Para maior segurança e manutenção do código.
+- **Eslint e Prettier**: Garantia de código limpo e padronizado.
+
+## Configuração e Execução
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/rgranvilla/portfolio.git
+   cd portfolio
+   ```
+
+2. Instale as dependências:
+  
+   ```bash
+   npm install
+   ```
+
+3. Inicie o ambiente de desenvolvimento:
+  
+   ```bash
+   npm run dev
+   ```
+
+4. Acesse o frontend em [http://localhost:3000](http://localhost:3000).
+
+## Scripts Disponíveis
+
+- `npm run dev`: Inicia o ambiente de desenvolvimento.
+- `npm run build`: Cria a versão de produção.
+- `npm run lint`: Analisa o código em busca de problemas de padrão.
+
+## 💡 Pontos de Estudo
+
+- Design responsivo e otimização de performance.
+- Integração com APIs externas.
+- Princípios de Clean Code e boas práticas de desenvolvimento.
+
+## 📚 Desenvolvedor
+
+[![Ricardo Granvilla](./assets/author.png)](https://github.com/rgranvilla)
+
+[Ricardo Granvilla 🚀](https://github.com/rgranvilla)
+
+[![Twitter Badge](https://img.shields.io/badge/-@rgranvilla-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/rgranvilla)](https://twitter.com/rgranvilla)
+[![Linkedin Badge](https://img.shields.io/badge/-Ricardo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rgranvilla/)](https://www.linkedin.com/in/rgranvilla/)
+[![Gmail Badge](https://img.shields.io/badge/-rgranvilla@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rgranvilla@gmail.com)](mailto:rgranvilla@gmail.com)
+
+---
+
+Desenvolvido para destacar experiência e competência no desenvolvimento web. 🚀
